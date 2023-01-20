@@ -11,6 +11,6 @@ RES - GPIO 25
 DC - GPIO 24
 CS - GPIO 8 (CEO)
 
-To test the connection you can run the random_eyes_generator.py code.
+To test the connection you can run the random_eyes_generator.py code. For this you also need to download the images file.
 You need to download and import the DialogFlow zip file. After that an NGROK webhook must be created in Python to make the connection between the OLED display and DialogFlow. This is explained in this YouTube video: https://www.youtube.com/watch?v=IKNaklJwNzk
 After this the talk_to_buddy.py file in the Code folder can be used to communicate with your buddy.
