@@ -1,0 +1,16 @@
+This project is created to make a buddy for kids to talk to. This is done by using DialogFlow to talk to and an OLED to convey the emotions by displaying the eyes of the buddy.
+
+The OLED is using SPI communication, for this the LUMA-OLED library must be installed. You can find the software in this link: https://luma-oled.readthedocs.io/en/latest/
+The pinout of the OLED with the Raspberry Pi 4 is:
+
+Ground - Ground
+VCC - 3.3V
+SCL - GPOI 11 (SCLK)
+SDA - GPIO 10 (MOSI)
+RES - GPIO 25
+DC - GPIO 24
+CS - GPIO 8 (CEO)
+
+To test the connection you can run the random_eyes_generator.py code.
+You need to download and import the DialogFlow zip file. After that an NGROK webhook must be created in Python to make the connection between the OLED display and DialogFlow. This is explained in this YouTube video: https://www.youtube.com/watch?v=IKNaklJwNzk
+After this the talk_to_buddy.py file in the Code folder can be used to communicate with your buddy.
